@@ -6,7 +6,7 @@ attr_accessor :date, :patient, :doctor
      @date = date
      @doctor = doctor
      @@all << self
-   end
+  end
     def self.all
      @@all
    end
