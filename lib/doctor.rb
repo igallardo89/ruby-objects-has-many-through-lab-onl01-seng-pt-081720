@@ -18,7 +18,11 @@ class Doctor
   end
   
   def patients
-    appointments.map {|appointment| appointment.patient}
-   end
+   appointments.map {|appointment| appointment.patient}
+  end
+   
+  def doctors
+   appointments.collect {|appointment| appointment.doctor}
+  end
 
 end
